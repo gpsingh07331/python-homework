@@ -39,7 +39,7 @@ CREATE TABLE "merchant" (
 CREATE TABLE "transaction" (
     "transaction_id" Serial   NOT NULL,
 	"transaction_date" timestamp   NOT NULL,
-	"amount" int   NOT NULL,
+	"amount" numeric(20,2)   NOT NULL,
     "card_number" varchar(300)   NOT NULL,
     "merchant_id" int   NOT NULL, 
     CONSTRAINT "pk_transaction" PRIMARY KEY (
